@@ -1,0 +1,15 @@
+<div class="accordian-page">
+  <section class="accordian-container">
+    <ng-container *ngIf="items">
+      <div class="single-accordian" *ngFor="let item of items; let i = index">
+        <button class="accordian-btn" (click)="onToggle(i)" [attr.aria-expanded]="activeAccordian == i? true: false">{{item.title}} <i class="fa fa-chevron-{{activeAccordian == i? 'up': 'down'}}" aria-hidden="true"></i></button>
+        <div class="accordian-content" *ngIf="activeAccordian == i">
+          <p>{{item.content}}</p>
+        </div>
+      </div>
+    </ng-container>
+    <ng-container *ngIf="items.length == 0">
+      <p>No items available.</p>
+    </ng-container>
+  </section>
+</div>

@@ -1,0 +1,45 @@
+.accordian-page-page {
+    width: 100%;
+}
+
+.single-accordian:not(:last-of-type) {
+    margin-bottom: 0.8rem;
+}
+
+.accordian-container {
+    width: 30rem;
+    margin: auto;
+    background-color: #F6F6F6;
+    padding: 1rem;
+    border: 1px solid #D8D8D8;
+    border-radius: 0.6rem;
+}
+
+.accordian-btn {
+    color: black;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #F1F1F1;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.8rem;
+    border: 1px solid #D8D8D8;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+.accordian-btn[aria-expanded="true"] {
+    background-color: #D0D0D0;
+}
+
+.accordian-btn:hover {
+    background-color: #D0D0D0;
+}
+
+.accordian-content {
+    width: 100%;
+    border: 1px solid #D8D8D8;
+    padding: 0.8rem;
+    background-color: #FAFAFA;
+}

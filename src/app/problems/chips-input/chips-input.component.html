@@ -1,0 +1,9 @@
+<div style="display: flex; flex-direction: column; align-items: center; margin: 40px 0;">
+  <h2>Chips Input</h2>
+  <input type="text" placeholder="Type a chip and press tag" style="padding: 8px; width: 200px;" (keydown.enter)="addSingleChip()" [(ngModel)]="chipLabel">
+  <div class="chips-container">
+    <ng-container>
+      <app-single-chip *ngFor="let chip of chips" [chip]="chip" (onDeleteChip)="updateChips()"></app-single-chip>
+    </ng-container>
+  </div>
+</div>

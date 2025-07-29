@@ -1,0 +1,31 @@
+<div class="form-container">
+  <form>
+    <div class="form-field name">
+      <div class="label">
+        <label for="name">Name:</label>
+      </div>
+      <input type="text" id="name" formControlName="name">
+      <div class="validation-text">Name is Required.</div>
+    </div>
+    <div class="form-field email">
+      <div class="label">
+        <label for="email">Email:</label>
+      </div>
+      <input type="email" id="email" formControlName="email">
+      <div class="validation-text">Email is Required.</div>
+    </div>
+    <div class="form-field message">
+      <div class="label">
+        <label for="message">Message:</label>
+      </div>
+      <textarea name="message" id="message" formControlName="message"></textarea>
+      <div class="validation-text">Message is Required.</div>
+    </div>
+    <div class="submit-btn">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+  <!-- <div class="result">
+    <h1>Thank You, User!</h1>
+  </div> -->
+</div>

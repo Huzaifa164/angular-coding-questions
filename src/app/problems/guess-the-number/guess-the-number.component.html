@@ -1,0 +1,20 @@
+<div style="display: flex; flex-direction: column; align-items: center; margin: 50px 0;">
+  <h2>Guess the Number</h2>
+  <input
+    placeholder="Enter a number between 1 and 100"
+    style="width: 300px; padding: 5px;"
+    id="guess-input"
+    [(ngModel)]="guessInput"
+  />
+  <div class="controls-container">
+    <div class="guess-btn">
+      <button (click)="onCheckGuess()">Check Guess</button>
+    </div>
+    <div class="reset-btn">
+      <button (click)="onReset()">Reset Game</button>
+    </div>
+  </div>
+  <div class="result-container" *ngIf="output">
+    <p>{{output}}</p>
+  </div>
+</div>

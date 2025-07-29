@@ -1,0 +1,18 @@
+
+.single-chip {
+    background-color: lightgray;
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    margin: 0.3rem;
+    width: fit-content;
+    gap: 1rem;
+    align-items: center;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+}

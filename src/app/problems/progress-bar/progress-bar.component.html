@@ -1,0 +1,13 @@
+<div class="progress-container">
+  <div class="progress-heading">
+    <h1>Progress Bar</h1>
+  </div>
+  <div class="progress-bar" >
+    <div class="progress" #testBgColor></div>
+    <div class="progress-percent">{{progress}}%</div>
+  </div>
+  <div class="progress-buttons">
+    <button (click)="onDecrease()">-10%</button>
+    <button (click)="onIncrease()">+10%</button>
+  </div>
+</div>
