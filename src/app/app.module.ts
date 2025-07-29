@@ -11,6 +11,7 @@ import { ContactFormComponent } from './problems/contact-form/contact-form.compo
 import { GuessTheNumberComponent } from './problems/guess-the-number/guess-the-number.component';
 import { ProgressBarComponent } from './problems/progress-bar/progress-bar.component';
 import { ToggleButtonComponent } from './problems/toggle-button/toggle-button.component';
+import { MortgageCalculatorComponent } from './problems/mortgage-calculator/mortgage-calculator.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ToggleButtonComponent } from './problems/toggle-button/toggle-button.co
     ProgressBarComponent,
     ContactFormComponent,
     ToggleButtonComponent,
+    MortgageCalculatorComponent,
   ],
   imports: [
     BrowserModule,

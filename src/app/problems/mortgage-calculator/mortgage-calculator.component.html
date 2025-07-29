@@ -1,0 +1,23 @@
+<div>
+    <h1>Mortgage Calculator</h1>
+    <div>
+        <div class="amount">
+            <label for="amount">Loan Amount (INR):</label>
+            <input type="number" id="amount" [(ngModel)]="amount">
+        </div>
+        <div class="rate">
+            <label for="rate">Annual Interest Rate (%):</label>
+            <input type="number" id="rate" [(ngModel)]="rate">
+        </div>
+        <div class="term">
+            <label for="term">Loan Term (Years):</label>
+            <input type="number" id="term" [(ngModel)]="term">
+        </div>
+        <div class="btn">
+            <button (click)="onCalculate()">Calculate</button>
+        </div>
+    </div>
+    <div class="result" *ngIf="result">
+        <p>Monthly Payment: {{ result }}</p>
+    </div>
+</div>
